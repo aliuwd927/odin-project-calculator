@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+}
+
+.calculatorContainer{
+    width: 15%;
+    height: 50%;
+    border-style: solid;
+    border-color: green;
+}
