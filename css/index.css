@@ -13,13 +13,34 @@ body{
 .container{
     width: 100%;
     height: 100%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.calculatorContainer{
+    max-width: 300px;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4 auto);
     border-style: solid;
     border-color: black;
 }
 
-.calculatorContainer{
-    width: 15%;
-    height: 50%;
+#displayNum{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    justify-content: end;
+    align-items: center;
     border-style: solid;
-    border-color: green;
+    border-color: black;
+}
+
+#zeroBtn{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
