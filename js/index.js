@@ -1,7 +1,17 @@
-const calcButton = document.querySelector('button');
+// Get all button element
+const calcButton = document.querySelectorAll('div.calculatorContainer > button');
 
-const btnReg = (e) =>{
-    console.log(e.target);
-}
+const btnPress = (e) => {
+    //console.log(e.target);
+    const btnInput = e.target;
+    console.log(btnInput);
+};
 
-calcButton.addEventListener('click', btnReg);
+//Loop thru button element to call for addEventListender
+for (let i = 0; i < calcButton.length; i++){
+    //console.log(i); //Ensuring we are capturing buttons
+    let buttonItems = calcButton[i]; //Ensure we see the html and not the number
+    //console.log(buttonItems);
+    buttonItems.addEventListener('click',btnPress);
+};
+
