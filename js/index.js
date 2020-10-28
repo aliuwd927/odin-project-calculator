@@ -4,13 +4,8 @@ const calcButton = document.querySelectorAll('div.calculatorContainer > button')
 const btnPress = (e) => {
     //console.log(e.target);
     const btnInput = e.target;
-    console.log(btnInput.innerText);
-    let parentEl = document.querySelector('.displayNum');
-    parentEl.html='';
-    btnInput.forEach(element => {
-        //console.log(element);
-        parentEl.appendChild(element);
-    });
+    //console.log(btnInput.innerText);
+    
 };
 
 //Loop thru button element to call for addEventListender
