@@ -2,8 +2,6 @@ const output_operation_element = document.querySelector('.operation .value');
 const output_result_element = document.querySelector('.results .value');
 const input_element = document.querySelector('.input');
 
-
-
 const calculator_buttons = [
    
     {
