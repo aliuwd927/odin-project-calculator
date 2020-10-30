@@ -187,14 +187,16 @@ function calculator(button){
     }else if(button.type === 'operator'){
         data.operation.push(button.symbol);
         data.result.push(button.formula);
-        console.log(data)
+        console.log(data);
     }else if (button.type === 'key'){
         if(button.type === 'clear'){
             data.operation = [];
             data.result = [];
+            console.log(data);
         } else if(button.type === 'delete'){
             data.operation.pop();
             data.result.pop();
+            console.log(data);
         }
     };
 };
