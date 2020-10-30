@@ -182,5 +182,21 @@ input_element.addEventListener('click', (e) =>{
 });
 
 function calculator(button){
-    
-}
+    if(button.type === 'number'){
+        data.operation.push(button.symbol);
+        data.result.push(button.formula);
+        console.log(data);
+    }else if(button.type === 'operator'){
+        data.operation.push(button.symbol);
+        data.result.push(button.formula);
+        console.log(data)
+    }else if (button.type === 'key'){
+        if(button.type === 'clear'){
+            data.operation = [];
+            data.result = [];
+        } else if(button.type === 'delete'){
+            data.operation.pop();
+            data.result.pop();
+        }
+    };
+};
