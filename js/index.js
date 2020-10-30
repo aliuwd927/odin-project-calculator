@@ -189,11 +189,11 @@ function calculator(button){
         data.result.push(button.formula);
         console.log(data);
     }else if (button.type === 'key'){
-        if(button.type === 'clear'){
+        if(button.name === 'clear'){
             data.operation = [];
             data.result = [];
             console.log(data);
-        } else if(button.type === 'delete'){
+        } else if(button.name === 'delete'){
             data.operation.pop();
             data.result.pop();
             console.log(data);
