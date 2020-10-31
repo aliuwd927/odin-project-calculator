@@ -182,5 +182,7 @@ input_element.addEventListener('click', (e) =>{
 });
 
 function calculator(button){
-    
+    if(button.name === 'number'){
+        
+    }
 }
