@@ -183,6 +183,12 @@ input_element.addEventListener('click', (e) =>{
 
 function calculator(button){
     if(button.name === 'number'){
+        data.operation.push(button.symbol);
+        data.result.push(button.formula);
+    }else if(button.name === 'operator'){
+        data.operation.push(button.symbol);
+        data.result.push(button.formula);
+    }else if (button.name === 'key'){
         
     }
 }
