@@ -191,6 +191,14 @@ function calculator(button){
         data.result.push(button.formula);
         console.log(data);
     }else if (button.type === 'key'){
-        
+        if(button.name === 'clear'){
+            data.operation = [];
+            data.result = [];
+        }else if (button.name === 'delete'){
+            data.operation.pop();
+            data.result.pop();
+            console.log(data);
+        }      
+        console.log(data);
     }
 }
