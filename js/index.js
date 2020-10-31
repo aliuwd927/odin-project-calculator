@@ -190,7 +190,7 @@ function calculator(button){
         data.operation.push(button.symbol);
         data.result.push(button.formula);
         console.log(data);
-    }else if (button.name === 'key'){
-
+    }else if (button.type === 'key'){
+        
     }
 }
