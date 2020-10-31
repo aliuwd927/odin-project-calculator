@@ -198,6 +198,7 @@ function calculator(button){
         }else if (button.name === 'delete'){
             data.operation.pop();
             data.result.pop();
+            updateResult(data.operation);
         };
              
     };
