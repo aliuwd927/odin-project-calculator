@@ -193,7 +193,7 @@ function calculator(button){
         if(button.name === 'clear'){
             data.operation = [];
             data.result = [];
-            updateResult(0);
+            updateToZero(0);
         }else if (button.name === 'delete'){
             data.operation.pop();
             data.result.pop();
@@ -202,7 +202,11 @@ function calculator(button){
     };
     
         function updateResult(result){
-            output_result_element.innerHTML = result;
+            output_result_element.innerHTML = result.join(' ');
         };
+
+        function updateToZero(result){
+            output_result_element.innerHTML = result;
+        }
 };
 
