@@ -185,21 +185,24 @@ function calculator(button){
     if(button.type === 'number'){
         data.operation.push(button.symbol);
         data.result.push(button.formula);
-        console.log(data);
+        updateResult(data.operation);
     }else if(button.type === 'operator'){
         data.operation.push(button.symbol);
         data.result.push(button.formula);
-        console.log(data);
     }else if (button.type === 'key'){
         if(button.name === 'clear'){
             data.operation = [];
             data.result = [];
-            console.log(data);
+            updateResult(0);
         }else if (button.name === 'delete'){
             data.operation.pop();
             data.result.pop();
-            console.log(data);
-        }      
-        console.log(data);
-    }
-}
+        };
+             
+    };
+    
+        function updateResult(result){
+            output_result_element.innerHTML = result;
+        };
+};
+
