@@ -194,6 +194,7 @@ function calculator(button){
         if(button.name === 'clear'){
             data.operation = [];
             data.result = [];
+            console.log(data);
         }else if (button.name === 'delete'){
             data.operation.pop();
             data.result.pop();
