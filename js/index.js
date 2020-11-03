@@ -161,8 +161,6 @@ function createCalcBtn(){
                         </button>`;
                 added_btns++;
         });
-
-
 };
 
 createCalcBtn();
@@ -207,6 +205,6 @@ function calculator(button){
 
         function updateToZero(result){
             output_result_element.innerHTML = result;
-        }
+        };
 };
 
