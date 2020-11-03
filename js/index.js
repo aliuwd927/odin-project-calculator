@@ -187,7 +187,7 @@ function calculator( button ){
 
 function updateOutputOperation(operation){
     output_operation_element.innerHTML = operation;
-}
+} 
 
 function updateOutputResult(result){
     output_result_element.innerHTML = result;
