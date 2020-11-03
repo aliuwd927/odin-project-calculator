@@ -180,23 +180,33 @@ input_element.addEventListener('click', (e) =>{
 });
 
 function calculator(button){
-    if(button.type === 'number'){
+    if(button.type === 'number' ){
         data.operation.push(button.symbol);
         data.result.push(button.formula);
-        console.log(data);
+        updateResult(data.operation);
     }else if(button.type === 'operator'){
         data.operation.push(button.symbol);
         data.result.push(button.formula);
-        console.log(data);
+        updateResult(data.operation);
     }else if (button.type === 'key'){
         if(button.name === 'clear'){
             data.operation = [];
             data.result = [];
-            console.log(data);
-        } else if(button.name === 'delete'){
+            updateToZero(0);
+        }else if (button.name === 'delete'){
             data.operation.pop();
             data.result.pop();
-            console.log(data);
-        }
+            updateResult(data.operation);
+        };
+             
     };
+    
+        function updateResult(result){
+            output_result_element.innerHTML = result.join(' ');
+        };
+
+        function updateToZero(result){
+            output_result_element.innerHTML = result;
+        }
 };
+
